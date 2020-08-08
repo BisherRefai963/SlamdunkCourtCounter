@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+ <LinearLayout
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Shohoku High School"
+        android:textColor="#CC0007"
+        android:textSize="24sp"
+        />
+
+     <TextView
+         android:id="@+id/team_a_score"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:padding="16dp"
+         android:text="0"
+         android:textSize="56sp" />
+
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CC0007"
+        android:gravity="center_horizontal"
+        android:onClick="AddThreeForTeamA"
+        android:text="+3 Points"
+
+        android:textColor="#F6F3F3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CC0007"
+        android:gravity="center_horizontal"
+        android:onClick="AddTwoForTeamA"
+        android:text="+2 Points"
+        android:textColor="#F6F3F3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CC0007"
+
+        android:gravity="center_horizontal"
+        android:onClick="AddOneForTeamA"
+        android:text="FreeThrow"
+        android:textColor="#F6F3F3"
+        />
+</LinearLayout>
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#CC0007">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=" Kainan High School"
+            android:textColor="#650080"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="56sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FDD835"
+            android:gravity="center_horizontal"
+            android:onClick="AddThreeForTeamB"
+            android:text="+3 Points"
+
+            android:textColor="#650080"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FDD835"
+            android:gravity="center_horizontal"
+            android:onClick="AddTwoForTeamB"
+            android:text="+2 Points"
+            android:textColor="#650080"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FDD835"
+            android:gravity="center_horizontal"
+            android:onClick="AddOneForTeamB"
+            android:text="FreeThrow"
+            android:textColor="#650080"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:background="#939391"
+        android:onClick="ResetScore"
+        android:text="Reset"
+        android:textColor="#FBFBFB"
+        />
+</RelativeLayout>
